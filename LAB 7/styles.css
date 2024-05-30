@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333; /* Text color */
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .navbar .badge {
+    font-size: 0.8rem;
+    margin-left: 5px;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    color: #555; /* Link color */
+  }
+
+  .pagination .page-link {
+    font-size: 1rem;
+    color: #555; /* Pagination link color */
+  }
+
+  .pagination .page-item.disabled .page-link {
+    color: #6c757d; /* Disabled pagination link color */
+  }
+
+  .container {
+    margin-top: 5px;
+  }
+
+  #myChart {
+    width: 100%;
+    height: auto;
+  }
+
+  .navbar {
+    background-color: #ffebcd !important; /* Navbar background color */
+    border-bottom: 1px solid #ddd; /* Navbar border color */
+    border-radius: 10px; /* Navbar border radius */
+  }
+
+  .dropdown-menu {
+    border: 1px solid #ddd; /* Dropdown menu border color */
+    border-radius: 10px; /* Dropdown menu border radius */
+  }
+
+  .form-control {
+    border-color: #ccc; /* Form input border color */
+    border-radius: 5px; /* Form input border radius */
+  }
+
+  .btn-outline-success {
+    color: #fff; /* Button text color */
+    background-color: #28a745; /* Button background color */
+    border-color: #28a745; /* Button border color */
+    border-radius: 5px; /* Button border radius */
+  }
+
+  .btn-outline-success:hover {
+    color: #fff; /* Button text color on hover */
+    background-color: #218838; /* Button background color on hover */
+    border-color: #1e7e34; /* Button border color on hover */
+  }
+
+  /* Hide the chart initially */
+  #myChart {
+    display: none;
+  }
+
+  /* Flexbox and Grid Utilities */
+  .justify-content-center {
+    justify-content: center !important;
+  }
+
+  .align-items-center {
+    align-items: center !important;
+  }
+
+  .order-lg-1 {
+    order: 1;
+  }
+
+  .order-lg-2 {
+    order: 2;
+  }

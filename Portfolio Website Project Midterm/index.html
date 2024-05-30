@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Lab Works</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p><span>Cyril Josh P. Roselim</span></p>
+            <h1>Portfolio Website Project</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="meinfo"><br>Age: 19<br><br>
+                Full Name: Cyril Josh Padoga Roselim<br><br>
+                Marital Status: Single<br><br>
+                Address: Purok-3 Brgy. Togbongon, Surigao City, Surigao Del Norte<br><br></p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Works well under pressure</span></li>
+                        <li>Fast Typer</li><br>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Northeastern Mindanao Colleges<br>2017-2023</span></li>
+                        <li>Surigao Del Norte State University<br>2023-Present</li><br>
+                    </ul>
+                </div>
+                <div class="tab-contents active-tab" id="hobbies">
+                    <ul>
+                        <li><span>Watching Anime</span></li>
+                        <li>Sleeping</li>
+                        <li><span>Video Games (Mostly rhythm games)</span></li>
+                        <li>Riding</li>
+                        <li><span>Netflix and Chill</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Lab Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/lab1.png">
+                <div class="layer">
+                    <h3>Lab 1</h3>
+                    <p>Learning CSS Fundamentals</p>
+                    <a href="#"><i class="fa-duotone fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/lab2.png">
+                <div class="layer">
+                    <h3>Lab 2</h3>
+                    <p>Columns</p>
+                    <a href="#"><i class="fa-duotone fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/lab3.png">
+                <div class="layer">
+                    <h3>Lab 3</h3>
+                    <p>Responsive Web Design</p>
+                    <a href="#"><i class="fa-duotone fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/lab4.png">
+                <div class="layer">
+                    <h3>Lab 4</h3>
+                    <p>Animation</p>
+                    <a href="#"><i class="fa-duotone fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>croselim@ssct.edu.ph</p>
+                <p>0950 731 ****</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+
+            </div>
+        </div>
+    </div>
+</div>
+    
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
